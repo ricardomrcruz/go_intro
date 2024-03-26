@@ -1,23 +1,18 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strings"
+)
 
 func main() {
 
-	// var ages [3]int = [3]int{20, 25, 30}
-	//the length of the arrays is fixed
-	var ages = [3]int{20, 25, 30}
+	greeting := "hello there friends!"
 
-	names := [4]string{"yoshiu", "mario", "bowser", "peach"}
-	names[1] = "luigi" //to change the value of a element of an array
-
-	fmt.Println(ages, len(ages))
-	fmt.Println(names, len(names))
-
-	// slices (use arrays under the hood)
-	var scores = []int{100, 50, 60}
-	scores[2] = 25
-	scores = append(scores, 85)
-	fmt.Println(scores)
-
+	// fmt.Println(strings.Contains(greeting,"hello!"))
+	// fmt.Println(strings.ReplaceAll(greeting,"hello", "hola"))
+	// fmt.Println(strings.ToUpper(greeting))
+	
+	//the original value remains unchanged
+	fmt.Println("original string value =", greeting)
 }

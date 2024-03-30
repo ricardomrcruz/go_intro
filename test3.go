@@ -2,6 +2,10 @@ package main
 
 import "fmt"
 
+
+//ARRAYS AND SLICES
+
+
 func main4() {
 
 	// var ages [3]int = [3]int{20, 25, 30}

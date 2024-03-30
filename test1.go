@@ -2,6 +2,10 @@ package main
 
 import "fmt"
 
+
+//VARIABLES,STRINGS ABND NUMBERS
+
+
 func main2() {
 
 	//strings

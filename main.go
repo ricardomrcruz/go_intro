@@ -11,6 +11,9 @@ func sayGreeting(n string) {
 func sayBye(n string) {
 	fmt.Printf("Goodbye %v \n", n)
 }
+func cycleNames(n []string, f func(string)) {
+	for _, v := range n 
+}
 
 func main() {
 

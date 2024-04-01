@@ -12,7 +12,10 @@ func sayBye(n string) {
 	fmt.Printf("Goodbye %v \n", n)
 }
 func cycleNames(n []string, f func(string)) {
-	for _, v := range n 
+
+	for _, v := range n {
+		f(v)
+	}
 }
 
 func main() {
@@ -21,4 +24,6 @@ func main() {
 	sayGreeting("luigi")
 	sayBye("mario")
 
+	//this function calls a function for every strin iterated in the first arg 
+	cycleNames([]string{"cloud","tifa", "barret"}, sayGreeting)
 }

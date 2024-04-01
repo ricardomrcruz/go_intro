@@ -9,7 +9,7 @@ import (
 //THE STANDARD LIBRARY
 
 
-func main5() {
+func main4() {
 
 	// greeting := "hello there friends!"
 

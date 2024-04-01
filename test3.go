@@ -6,7 +6,7 @@ import "fmt"
 //ARRAYS AND SLICES
 
 
-func main4() {
+func main3() {
 
 	// var ages [3]int = [3]int{20, 25, 30}
 	//the length of the arrays is fixed

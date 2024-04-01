@@ -5,7 +5,7 @@ import "fmt"
 
 //PRINTING FORMATTING STRINGS
 
-func main3() {
+func main2() {
 
 	age := 28
 	name := "ric"

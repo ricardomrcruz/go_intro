@@ -6,7 +6,7 @@ import "fmt"
 //VARIABLES,STRINGS ABND NUMBERS
 
 
-func main2() {
+func main1() {
 
 	//strings
 

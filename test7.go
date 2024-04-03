@@ -5,6 +5,9 @@ import (
 	"math"
 )
 
+//USING FUNCTIONS
+
+
 func sayGreeting(n string) {
 	fmt.Printf("Good Morning %v \n", n)
 }

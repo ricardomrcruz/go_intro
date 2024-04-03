@@ -5,6 +5,8 @@ import (
 	"strings"
 )
 
+//MULTIPLE RETURN VALUES
+
 func getInitials(n string) (string, string) {
 
 	s := strings.ToUpper(n)
@@ -22,7 +24,7 @@ func getInitials(n string) (string, string) {
 	return initials[0], "_"
 
 }
-func main() {
+func main8() {
 
 	fn1, sn1 := getInitials("tifa lockhart")
 	fmt.Println(fn1, sn1)

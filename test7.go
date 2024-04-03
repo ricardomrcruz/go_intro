@@ -31,8 +31,6 @@ func main7() {
 	// sayGreeting("luigi")
 	// sayBye("mario")
 
-	
-
 	//this function calls a function for every strin iterated in the first arg
 	cycleNames([]string{"cloud", "tifa", "barret"}, sayGreeting)
 	cycleNames([]string{"cloud", "tifa", "barret"}, sayBye)

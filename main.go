@@ -19,7 +19,6 @@ func main() {
 
 	fmt.Println(name)
 
-
 		func updateMenu(y map[string]float64){
 			y["coffee"] = 2.99
 		}

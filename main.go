@@ -1,17 +1,23 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"os"
+	"strings"
+)
+
+func createBill() bill {
+
+	reader := bufio.newReader(os.Stdin)
+
+	fmt.Print("Create a new bill name: ")
+	name, _ := reader.ReadString('\n')
+	name = strings.TrimSpace(name)
+
+}
 
 func main() {
 
-	mybill := newBill("mario's bill")
-
-	mybill.addItem("onion soup", 4.50)
-	mybill.addItem("veg pie", 8.95)
-	mybill.addItem("toffee pudding", 4.95)
-	mybill.addItem("coffee", 3.25)
-	mybill.updateTip(10)
-
-	fmt.Println(mybill.format())
+	mybill := createBill()
 
 }

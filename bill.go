@@ -15,11 +15,12 @@ type bill struct {
 func newBill(name string) bill {
 	b := bill{
 		name:  name,
-		items: map[string]float64{"pie": 5.99, "cake": 3.99},
+		items: map[string]float64{},
 		tip:   0,
 	}
 
 	return b
+
 }
 
 // format the bill
@@ -34,10 +35,27 @@ func (b bill) format() string {
 		total += v
 	}
 
-	fs += fmt.Sprintf("%-20v ...$%0.2f", "total:", total)
+	//add tip
+	fs += fmt.Sprintf("%-20v ...$%v \n", "tip:", b.tip)
+
+	//total
+	fs += fmt.Sprintf("%-20v ...$%0.2f", "total:", total+b.tip)
 
 	return fs
 
+}
+
+//Receiver Functions with Pointers
+//to update the tip variable use a pointer before the variable as argument with *asterix
+
+//update tip
+func (b *bill) updateTip(tip float64) {
+	b.tip = tip
+}
+
+//add an item to the bill
+func (b bill) addItem(name string, price float64) {
+	b.items[name] = price
 }
 
 // ouput
@@ -46,11 +64,3 @@ func (b bill) format() string {
 // pie:                 ...$5.99
 // cake:                ...$3.99
 // total:               ...$9.98
-
-//update tip
-
-// func (b bill) updateTip(tip float64){
-// 	b.tip = tip
-// }
-
-// func (b bill) addItem(name string, price )

@@ -4,8 +4,7 @@ import (
 	"fmt"
 )
 
-
-//PACKAGE SCOPES
+//PACKAGE SCOPES (Test 9)
 
 var points = []int{20, 90, 100, 45, 70}
 
@@ -15,6 +14,6 @@ func sayHello(n string) {
 
 }
 
-func showScore(){
+func showScore() {
 	fmt.Println("you scored these many points:", score)
 }

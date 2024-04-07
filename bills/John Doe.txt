@@ -1,0 +1,6 @@
+Bill breakdown:  
+Martini:             ...$2 
+Steak Frites:        ...$12 
+Vin Rouge:           ...$8 
+tip:                 ...$10 
+total:               ...$32.00

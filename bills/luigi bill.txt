@@ -1,0 +1,6 @@
+Bill breakdown:  
+cake:                ...$4.99 
+carrot:              ...$6.77 
+maccaron:            ...$2.88 
+tip:                 ...$3 
+total:               ...$17.64

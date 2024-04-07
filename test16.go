@@ -12,7 +12,7 @@ import (
 
 //see doc for strconv package and nil as a pointer zero value
 
-func getInput(prompt string, r *bufio.Reader) (string, error) {
+func getInput16(prompt string, r *bufio.Reader) (string, error) {
 	fmt.Println(prompt)
 	input, err := r.ReadString('\n')
 
@@ -20,7 +20,7 @@ func getInput(prompt string, r *bufio.Reader) (string, error) {
 
 }
 
-func createBill() bill {
+func createBill16() bill {
 
 	reader := bufio.NewReader(os.Stdin)
 
@@ -33,7 +33,7 @@ func createBill() bill {
 
 }
 
-func promptOptions(b bill) {
+func promptOptions16(b bill) {
 
 	reader := bufio.NewReader(os.Stdin)
 
@@ -73,7 +73,7 @@ func promptOptions(b bill) {
 	}
 }
 
-func main() {
+func main16() {
 
 	mybill := createBill()
 	promptOptions(mybill)

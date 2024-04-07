@@ -8,9 +8,9 @@ import (
 	"strings"
 )
 
-// PARSING FLOATS // ERRO HANDLING DATA TYPES
+// SAVING FILES https://www.youtube.com/watch?v=J88pG3NeRoA
 
-//see doc for strconv package and nil as a pointer zero value
+//see doc for os.WriteFile
 
 func getInput(prompt string, r *bufio.Reader) (string, error) {
 	fmt.Println(prompt)
